@@ -342,51 +342,6 @@ class Monitor():
         """ Return Shinnki Bus Time (Kwansei Gakuin University - Home)
         You need change the bus time list when bus time table change
         --- 2019-09-04 --- Kaz """
-
-        # # University to Home 
-        # if self.wifi_status(iface)[0] == 'lsnl':
-        #     bus_time = [('10','40'),('11','40'),('12','10'),('12','50'),('13','00'),('14','10'),
-        #                 ('14','40'),('14','55'),('15','10'),('15','15'),('15','40'),('16','00'),
-        #                 ('16','30'),('16','50'),('16','55'),('17','00'),('17','10'),('17','40'),
-        #                 ('18','10'),('18','20'),('18','25'),('18','30'),('18','40'),('18','50'),
-        #                 ('19','00'),('19','20'),('19','50'),('20','20'),('20','50'),('21','20'),
-        #                 ('21','50'),('22','20')]
-        #     # bus_time = [('10','40'),('12','10'),('13','00'),('14','40'),('14','55'),
-        #     #             ('15','15'),('16','30'),('17','00'),('18','10'),('18','40'),('19','20')]
-
-        # # Home to University 
-        # elif self.wifi_status(iface)[0] == 'HUMAX-8179D':
-        #     bus_time = [('7','35'),('7','42'),('7','57'),('8','25'),('8','25'),('8','30'),('8','30'),
-        #                 ('8','35'),('8','35'),('8','35'),('9','10'),('9','25'),('9','35'),('9','50'),
-        #                 ('10','05'),('10','20'),('10','30'),('10','35'),('10','40'),('11','05'),
-        #                 ('11','35'),('11','55'),('12','10'),('12','45'),('13','00'),('13','20'),
-        #                 ('13','40'),('14','40'),('16','05')]
-        #     # bus_time = [('7','47'),('8','25'),('8','35'),('9','25'),('9','50'),
-        #     #             ('10','20'),('10','40'),('11','35'),('11','55'),('13','00'),('14','40')]
-        # else:
-        #     bus_time = [('0','0')]
-            
-        # now_hour, now_minute = [int(time.strftime('%H')), int(time.strftime('%M'))]
-        # bus_hour = next_hour = 0
-
-        # for i, j in enumerate(bus_time):
-        #     bus_hour, bus_minute = [int(j[0]), int(j[1])]
-        #     if bus_hour < now_hour or bus_hour == now_hour and bus_minute < now_minute:
-        #         continue
-        #     elif i + 1 <= len(bus_time):
-        #         bus_hour, bus_minute = [str(j[0]), str(j[1])]
-        #         next_hour, next_minute = [bus_time[i+1][0], bus_time[i+1][1]]
-        #         break
-        #     else:
-        #         # bus_hour, bus_minute = [int(j[0]), int(j[1])]
-        #         break
-        # if bus_hour == 0:
-        #     return 'Bus: None'
-        # elif not next_hour == 0:
-        #     return 'Bus: {}:{} {}:{}'.format(bus_hour, bus_minute, next_hour, next_minute)
-        # else:    
-        #     return 'Bus: {}:{}'.format(bus_hour, bus_minute)
-
         now_hour, now_minute = [int(time.strftime('%H')), int(time.strftime('%M'))]
         bus_hour = next_hour = 0
 
