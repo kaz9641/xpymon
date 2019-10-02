@@ -47,7 +47,7 @@ UPDATE_INTERVAL = 1.
 BATTERY_WARN_THRESH = .05
 TIMEZONE_FILE = '/usr/share/zoneinfo/Europe/Brussels'
 
-WEATHER_DICT={'À²¤ì':'sunny','ÆŞ¤ê':'cloudy','±«':'rainy','ÆŞ¤Î¤Á±«':'cloudy then rainy'}
+WEATHER_DICT={'æ™´ã‚Œ':'sunny','æ›‡ã‚Š':'cloudy','é›¨':'rainy','æ›‡ã®ã¡é›¨':'cloudy then rainy'}
 WEATHER_URL="http://weather.livedoor.com/forecast/webservice/json/v1?city=%s"
 CITY_CODE="280010" 
 
